@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Parkinslot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Contacto</h1>
+    <p>Estamos aquí para atender tus consultas y necesidades. Puedes ponerte en contacto con nosotros de las siguientes maneras:</p>
+
+    <h2>Información de Contacto</h2>
+    <p><strong>Dirección:</strong> San Isidro Bonao Monseñor Nouel, Republica Dominicana</p>
+    <p><strong>Teléfono:</strong> 8293366019</p>
+    <p><strong>Correo Electrónico:</strong> [yuby9009ladamadehierro@gmail.com]</p>
+
+    <h2>Formulario de Contacto</h2>
+    <p>Si prefieres, también puedes enviarnos un mensaje directamente a través de este formulario:</p>
+    
+    <form action="procesar-formulario.js" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+        
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+  
+</body>
+</html>

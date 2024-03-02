@@ -1,0 +1,221 @@
+body {
+  background-color: #ede6db;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+}
+
+header {
+  width: 100%;
+  border-style: outset;
+  border-width: 15px;
+}
+
+h1 {
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+}
+
+.menu-principal {
+  background: #092d88;
+  display: flex;
+  justify-content: space-around;
+}
+.estacionat{
+  width: 80%; 
+  margin: 0 auto; 
+  padding-top: 60px; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-style: italic;
+  color: blue;
+  text-align: center;
+}
+
+.menu-principal a {
+  padding: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-principal a:hover {
+  background-color: burlywood;
+  color: black;
+}
+
+.menu-principal a:focus {
+  color: #a9aae8;
+}
+/* Estilos para el menú desplegable */
+.menu-desplegable:hover .submenu {
+  display: block;
+  z-index: 1;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: hsl(192, 71%, 61%);
+  list-style: none;
+  padding: 0;
+  z-index: 2;
+ color: black;
+}
+
+.submenu li {
+  padding: 5px;
+}
+
+.contenedorl {
+  width: 83rem;
+  margin: 0 auto;
+}
+
+.imagen-parqueo {
+  position: relative;
+  text-align: center;
+}
+
+.imagen-parqueo img {
+  width: 70%; 
+  height: 300px; 
+  max-height: 50%; 
+  max-width: 100%; 
+  display: block; 
+  margin: 0 auto; 
+  border: 3px solid #092d88;
+}
+
+.imagen-parqueo H1{
+  font-family:cursive;
+}
+.imagen-titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: black;
+  font-size: 2em;
+}
+
+.imagen-titulo h1 {
+  left: 20px;
+  width: 100%;
+  color: black;
+  font-size: 40px;
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.imagen-titulo p {
+  color: black;
+}
+
+.imagen-titulo p img {
+  
+  max-width: 40px;
+  height: auto;
+}
+
+.central-part {
+  height: 200px;
+  background-image:url(imgg.webp);
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-size: 100px 100px;
+  background-repeat: repeat-x;
+}
+
+.nameP {
+  color: rgb(16, 18, 18);
+  text-align: center;
+  color: aquamarine;
+  font-size: 60px;
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  animation: fadeIn 2s; 
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.co {
+  padding: 5%;
+  color: rgb(144, 136, 233);
+  border-style: double;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.co p {
+  letter-spacing: 15px;
+  font-size: 60px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Georgia;
+  display: flex;
+  border: 3px solid #092d88;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.co:hover {
+  background-color: bisque;
+  color: black;
+}
+
+.img-cont {
+  display: flex;
+}
+
+.img-cont img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  margin-right: 20px; 
+}
+
+footer {
+  padding: 15px;
+  text-align: right;
+  animation: slideInUp 1s;
+}
+
+@keyframes slideInUp {
+  0% {
+      transform: translateY(100%);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+/* Estilos para el botón de reserva rápida */
+footer form {
+  background-color: #092d88;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer button {
+    padding: 10px 20px;
+    background-color: #092d88;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer button:hover {
+    background-color: burlywood;
+    color: black;
+}
